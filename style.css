@@ -18,7 +18,11 @@ body { border: none; }
 
 h1, h2, h3, h4, h5, h6, p, a { border: 2px solid rgb(179,84,84); }
 
-[class*=grid] { margin: 0; }
+[class*=grid],
+[class*=col-] { 
+    margin: 0;
+    padding: 0;
+ }
 
 
 /* Universal Classes */
@@ -75,9 +79,9 @@ a {
 
 /* Header & Footer */
 
-/* header nav {
+header nav a {
     display: inline-block;
-} */
+}
 
 /* Images & Background Images */
 
@@ -87,5 +91,11 @@ a {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.bg-plant { background-image: url('images/plant.jpg'); }
+.bg-plant-light { background-image: url('images/plant-light.png'); }
+.bg-leaf { background-image: url('images/plant-2.jpg');}
+.bg-leaf-light { background-image: url('images/plant-2-light.png'); }
+
 
 /* Responsive Styles */
