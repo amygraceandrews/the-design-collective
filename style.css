@@ -54,7 +54,7 @@ body {
     color: rgb(60,60,60);
 }
 
-h2,h3,h4,h5,h6 {
+h3,h4,h5,h6 {
     font-weight: normal;
 }
 
@@ -75,6 +75,10 @@ header nav {
 
 nav a {
     padding: 0.2rem;
+}
+
+header p {
+    font-size: 0.8rem;
 }
 
 /* Custom Typography Styles */
