@@ -9,7 +9,7 @@
 /* Temporary Styles */
 
 * {
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     border: 2px solid rgb(200,200,200);
 }
 
@@ -34,6 +34,7 @@ h1, h2, h3, h4, h5, h6, p, a { border: 2px solid rgb(179,84,84); }
 .tall-90 { min-height: 90vh; }
 
 .padded    { padding: 5%;   }
+.padded-l  { padding-left: 5% ;}
 .padded-1  { padding: 1rem; }
 .padded-2  { padding: 2rem; }
 
@@ -42,13 +43,12 @@ h1, h2, h3, h4, h5, h6, p, a { border: 2px solid rgb(179,84,84); }
 
 .margin-b-0 { margin-bottom: 0; }
 
-.bg-featured { background-color: beige; }
-.bg-dark     { background-color: #24282B; }
 .bg-white { background-color: white; }
-.bg-banner { background-color: brown; }
-.bg-content { background-color: khaki; }
+.bg-rust  { background-color: #d3b4a2; }
+.bg-green { background-color: #9b9b81; }
+.bg-brown  { background-color: #a2745c; }
 
-.light-text     { color: white; } 
+.white-text     { color: white; } 
 .featured-text  { color: #183039; } 
 
 .left   { text-align: left; }
@@ -96,6 +96,8 @@ header nav a {
 .bg-plant-light { background-image: url('images/plant-light.png'); }
 .bg-leaf { background-image: url('images/plant-2.jpg');}
 .bg-leaf-light { background-image: url('images/plant-2-light.png'); }
+.bg-meeting { background-image: url('images/meeting.jpg'); }
+.bg-project { background-image: url('images/placeholder-project.png'); }
 
 
 /* Responsive Styles */
