@@ -23,6 +23,8 @@
 
 .padded    { padding: 5%;   }
 .padded-l  { padding-left: 5% ;}
+.padded-b { padding-bottom: 5%; }
+
 .padded-1  { padding: 1rem; }
 .padded-2  { padding: 2rem; }
 
@@ -30,6 +32,8 @@
 .padded-b-2  { padding-bottom: 2rem; }
 .padded-l-2 { padding-left: 2rem; }
 .padded-r-2 { padding-right: 2rem; }
+
+.padded-t-0 { padding: 0; }
 
 .margin-b-0 { margin-bottom: 0; }
 
@@ -40,6 +44,14 @@
 
 .white-text     { color: white; } 
 .featured-text  { color: #183039; } 
+
+.bold-text { font-weight: bold; }
+
+.xs-text { font-size: 0.6rem; }
+.sm-text { font-size: 0.8rem; }
+.md-text { font-size: 1rem; }
+.lg-text { font-size: 1.5rem; }
+.xl-text { font-size: 2rem; }
 
 .left   { text-align: left; }
 .center { text-align: center; }
@@ -54,8 +66,8 @@ body {
     color: rgb(60,60,60);
 }
 
-h3,h4,h5,h6 {
-    font-weight: normal;
+h1,h2,h3,h4,h5,h6,p {
+   margin-bottom: 0.8rem;
 }
 
 p { font-weight: 200; }
@@ -65,23 +77,32 @@ a {
     text-decoration: none;
 }
 
+p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+/* Custom Typography Styles */
+
 .logo {
     font-size: 1.5rem;
 }
 
-header nav {
-    font-size: 0.9rem;
-}
-
 nav a {
+    font-size: 0.9rem;
     padding: 0.2rem;
 }
 
-header p {
-    font-size: 0.8rem;
+.button {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 0.2rem 1rem;
+    color: white;
 }
-
-/* Custom Typography Styles */
 
 /* Header & Footer */
 
@@ -92,7 +113,7 @@ header nav a {
 /* Images & Background Images */
 
 .bg-image {
-    background-color: lightblue;
+    background-color: #d3b4a2;;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
