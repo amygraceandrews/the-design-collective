@@ -6,11 +6,17 @@
     box-sizing: border-box;
 }
 
+/* Images should never be bigger than the container i.e. take up more of the page which causes scrolling */
+
+img { max-width: 100%; }
+
 [class*=grid_],
 [class*=col-] {
     padding: 0;
     margin: 0;
 }
+
+html { scroll-behavior: smooth; }
 
 
 /* Universal Classes */
@@ -45,7 +51,6 @@
 .bg-brown  { background-color: #a2745c; }
 
 .white-text     { color: white; } 
-.featured-text  { color: #183039; } 
 
 .bold-text { font-weight: bold; }
 
@@ -69,7 +74,8 @@ body {
 }
 
 h2,h3,h4,h5,h6,p {
-   margin-bottom: 0.8rem;
+   margin-bottom: 0.5rem;
+   letter-spacing: -0.01rem;
 }
 
 h1 { font size: 2.2rem; }
@@ -83,24 +89,11 @@ p {
     font-size: 0.9rem;
 }
 
+p:last-child { margin-bottom: 0; }
+
 a {
     color: inherit;
     text-decoration: none;
-}
-
-p:last-child {
-    margin-bottom: 0;
-}
-
-
-
-
-
-
-/* Custom Typography Styles */
-
-.logo {
-    font-size: 1.5rem;
 }
 
 nav a {
@@ -108,20 +101,27 @@ nav a {
     padding: 0.2rem;
 }
 
+a:hover { color: #d3b4a2; }
+
+
+
+/* Custom Typography Styles */
+
 .button {
+    text-decoration: none;
     display: inline-block;
-    border: 1px solid white;
+    border: 1px solid;
     padding: 0.2rem 1rem;
     color: white;
 }
+
+.bg-rust .button:hover { color: #a2745c; }
 
 /* Header & Footer */
 
 header nav a {
     display: inline-block;
 }
-
-.projects p { font-size: 1.1rem; }
 
 /* Images & Background Images */
 
@@ -154,3 +154,9 @@ header nav a {
 
 
 /* Responsive Styles */
+
+@media(max-width: 48em) {
+    .hide-sm { display: none; }
+    .center-sm { text-align: center; }
+    .flex-flip-sm { flex-direction: column-reverse; }
+}
