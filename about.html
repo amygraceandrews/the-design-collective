@@ -1,0 +1,45 @@
+---
+layout: default
+team:
+ - name: Greg
+   bio: Big Boss Coder
+   description: A short description
+   profile_image: 
+   - name: Jane
+   bio: Big Boss Coder
+   description: A short description
+   - name: Dan
+   bio: Big Boss Coder
+   description: A short description    
+---
+
+<!-- Banner Section -->
+<section class="grid bg-green tall-50">
+    <div class="col-5-middle padded white-text editable">
+            <h2>
+                Meet our growing family
+            </h2>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati at nobis omnis sed libero velit hic temporibus architecto delectus. Molestiae, corporis tempora quibusdam iste cumque dolore voluptatum eveniet voluptatibus doloremque?</p>
+    </div>
+    <div class="col-7 bg-image bg-plant"></div>
+</section>
+
+
+<!-- Team Members Jekyll Loop -->
+
+<section class="padded">
+
+    {% for person in page.team %}
+
+        <div class="grid">
+            <div class="col-5">
+                <img src="{{ person.profile_image }}">
+                <h3>{{ person.name }}</h3>
+                <p><strong>{{ person.bio }}</strong></p>
+                <p> {{ person.desciption }}</p>
+            </div>
+        </div>
+
+    {% endfor %}
+
+</section>

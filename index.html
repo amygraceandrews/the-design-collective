@@ -1,197 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>The Design Collective</title>
+---
+layout: default
+---
 
-
-    <!-- Gridlex -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">  
-
-
-    <!-- Fontawesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-    <!-- Custom CSS Sheet -->
-    <link rel="stylesheet" href="/style.css">
-
-
-</head>
-
-
-<!------- This is the main HTML ------->
-<body>
-    
-    <!-- Header Nav Section -->
-    <header class="grid-spaceBetween padded-2">
-        <div class="col-7-middle_sm-12 center-sm">
-            <h1>The Design Collective.</h1>
-        </div>    
-            <nav class="col-5-middle_sm-12 right center-sm">
-                <a href="#why-us">Why Us</a>
-                <a href="#services">Services</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
+<!-- Header Banner Section -->
+<section>
+    <div class="bg-image bg-plant grid-middle tall-70 padded">
+        <div class="col-6">
+            <h2>
+                Website design & development that grows with your business
+            </h2>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati at nobis omnis sed libero velit hic temporibus architecto delectus. Molestiae, corporis tempora quibusdam iste cumque dolore voluptatum eveniet voluptatibus doloremque?</p>
         </div>
-</header>
+    </div>
+</section>
+
+<!-- Sign-up Small Banner -->
+<section class="bg-brown white-text padded-1 center sm-text">
+    <p>
+        <a href="#">Sign up to our newsletter to access free design resources</a>
+    </p>
+</section>  
 
 
-    <!-- Header Banner Section -->
-    <section>
-        <div class="bg-image bg-plant grid-middle tall-70 padded">
-            <div class="col-6">
-                <h2>
-                    Website design & development that grows with your business
-                </h2>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati at nobis omnis sed libero velit hic temporibus architecto delectus. Molestiae, corporis tempora quibusdam iste cumque dolore voluptatum eveniet voluptatibus doloremque?</p>
-            </div>
+<!-- "Why Choose Us" Icon Section -->
+<section class="padded grid center icon-section" id="why-us">
+        <div class="col-12 center padded-b-2">
+            <h2 class="xl-text">Why Choose Us?</h2>
         </div>
-    </section>
-
-
-    <!-- Sign-up Small Banner -->
-    <section class="bg-brown white-text padded-1 center sm-text">
-        <p>
-            <a href="#">Sign up to our newsletter to access free design resources</a>
-        </p>
-    </section>  
-
-
-    <!-- "Why Choose Us" Icon Section -->
-    <section class="padded grid center icon-section" id="why-us">
-            <div class="col-12 center padded-b-2">
-                <h2 class="xl-text">Why Choose Us?</h2>
-            </div>
-        <div class="grid-spaceBetween center">
-            <div class="col-2_sm-6">
-                <img src="/icons/flash.png">
-                <h3>Lightning Fast</h3>
-                <p>Code built from the ground up to make your website lightning fast</p>
-            </div>
-            <div class="col-2_sm-6">
-                <img src="/icons/dollar.svg">
-                <h3>Lightning Fast</h3>
-                <p>Code built from the ground up to make your website lightning fast</p>
-            </div>
-            <div class="col-2_sm-6">
-                <img src="/icons/idea-2.svg">
-                <h3>Lightning Fast</h3>
-                <p>Code built from the ground up to make your website lightning fast</p>
-            </div>
-            <div class="col-2_sm-6">
-                <img src="/icons/seo-tag.png">
-                <h3>Lightning Fast</h3>
-                <p>Code built from the ground up to make your website lightning fast</p>
-            </div>
-    </section>
-
-
-    <!-- About Us Section -->
-    <section class="bg-green grid padded white-text about">
-        <div class="col-8_sm-12 bg-image bg-meeting tall-50"></div>
-        <div class="col-4-middle_sm-12 padded">
-            <h2>More than just another agency</h2>
-            <p>We specialise in start-up web development that starts small but can scale as your business scales. Using the latest in static site custom code, we make things easy for you, so its one less thing to think.</p>
-            <p>We specialise in start-up web development that starts small but can scale as your business scales. Using the latest in static site custom code, we make things easy for you, so its one less thing to think.</p>   
-        </div>
-    </section>
-
-
-
-    <!-- Join Community Small Banner -->
-    <section class="grid bg-brown white-text center">
-        <div class="col-12-middle padded-1">
-            <h3 class="bold-text">Stay up to date with all my latest work & antics</h3>
-            <a href="#" class="button">Instgram</a>
-        </div>
-    </section>
-
-
-    <!-- Services Banner Section -->
-    <section class="bg-image bg-leaf padded grid-right tall-50" id="services">
-        <div class="col-6-middle right"> 
-            <h2>Our Services</h2>
-            <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat rem consequuntur labore, voluptatem animi necessitatibus perspiciatis cumque eum quas vero unde iste quisquam earum ab maxime eius, nemo sit deserunt.</p>
-        </div>
-    </section>
-
-
-    <!-- Services Grid Section -->
-    <section  class="grid-spaceAround center">
-        <div class="col-3 padded">
-            <h3>Design.</h3>
+    <div class="grid-spaceBetween center">
+        <div class="col-2_sm-6">
+            <img src="/icons/flash.png">
+            <h3>Lightning Fast</h3>
             <p>Code built from the ground up to make your website lightning fast</p>
         </div>
-        <div class="col-3 padded">
-            <h3>Build.</h3>
+        <div class="col-2_sm-6">
+            <img src="/icons/dollar.svg">
+            <h3>Lightning Fast</h3>
             <p>Code built from the ground up to make your website lightning fast</p>
         </div>
-        <div class="col-3 padded">
-            <h3>SEO.</h3>
+        <div class="col-2_sm-6">
+            <img src="/icons/idea-2.svg">
+            <h3>Lightning Fast</h3>
             <p>Code built from the ground up to make your website lightning fast</p>
         </div>
-    </section>
-
-
-
-    <!-- Projects Section -->
-    <section class="padded bg-rust" id="projects">
-        <h2 class="center">Recent Projects</h2>
-
-        <div class="grid-spaceBetween padded">
-            <div class="col-5-middle_sm-12  padded">
-                <h3>Zen Studio Website</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime possimus quibusdam nemo modi dolorem, ea praesentium deleniti impedit iure, pariatur itaque asperiores eos labore reiciendis nisi ipsam, odit fuga sint.</p>
-                <a href="#" class="button">Go to site</a>
-            </div>
-            <div class="col-6_sm-12 bg-image bg-project landscape-wide"></div>  
+        <div class="col-2_sm-6">
+            <img src="/icons/seo-tag.png">
+            <h3>Lightning Fast</h3>
+            <p>Code built from the ground up to make your website lightning fast</p>
         </div>
+</section>
 
 
-        <div class="grid-spaceBetween flex-flip-sm padded padded-t-0 ">
-            <div class="col-6_sm-12 bg-image bg-project landscape-wide"></div>
-            <div class="col-5-middle_sm-12 padded right">
-                <h3>Zen Studio Website</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime possimus quibusdam nemo modi dolorem, ea praesentium deleniti impedit iure, pariatur itaque asperiores eos labore reiciendis nisi ipsam, odit fuga sint.</p>
-                <a href="#" class="button">Go to site</a>
-            </div>
+<!-- About Us Section -->
+<section class="bg-green grid padded white-text about">
+    <div class="col-8_sm-12 bg-image bg-meeting tall-50"></div>
+    <div class="col-4-middle_sm-12 padded">
+        <h2>More than just another agency</h2>
+        <p>We specialise in start-up web development that starts small but can scale as your business scales. Using the latest in static site custom code, we make things easy for you, so its one less thing to think.</p>
+        <p>We specialise in start-up web development that starts small but can scale as your business scales. Using the latest in static site custom code, we make things easy for you, so its one less thing to think.</p>   
+    </div>
+</section>
+
+
+
+<!-- Join Community Small Banner -->
+<section class="grid bg-brown white-text center">
+    <div class="col-12-middle padded-1">
+        <h3 class="bold-text">Stay up to date with all my latest work & antics</h3>
+        <a href="#" class="button">Instgram</a>
+    </div>
+</section>
+
+
+<!-- Services Banner Section -->
+<section class="bg-image bg-leaf padded grid-right tall-50" id="services">
+    <div class="col-6-middle right"> 
+        <h2>Our Services</h2>
+        <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat rem consequuntur labore, voluptatem animi necessitatibus perspiciatis cumque eum quas vero unde iste quisquam earum ab maxime eius, nemo sit deserunt.</p>
+    </div>
+</section>
+
+
+<!-- Services Grid Section -->
+<section  class="grid-spaceAround center">
+    <div class="col-3 padded">
+        <h3>Design.</h3>
+        <p>Code built from the ground up to make your website lightning fast</p>
+    </div>
+    <div class="col-3 padded">
+        <h3>Build.</h3>
+        <p>Code built from the ground up to make your website lightning fast</p>
+    </div>
+    <div class="col-3 padded">
+        <h3>SEO.</h3>
+        <p>Code built from the ground up to make your website lightning fast</p>
+    </div>
+</section>
+
+
+
+<!-- Projects Section -->
+<section class="padded bg-rust" id="projects">
+    <h2 class="center">Recent Projects</h2>
+
+    <div class="grid-spaceBetween padded">
+        <div class="col-5-middle_sm-12  padded">
+            <h3>Zen Studio Website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime possimus quibusdam nemo modi dolorem, ea praesentium deleniti impedit iure, pariatur itaque asperiores eos labore reiciendis nisi ipsam, odit fuga sint.</p>
+            <a href="#" class="button">Go to site</a>
         </div>
-    </section>
+        <div class="col-6_sm-12 bg-image bg-project landscape-wide"></div>  
+    </div>
 
 
-    <!-- Footer Section -->
-    <footer class="bg-brown white-text padded padded-b-0 grid-spaceBetween" id="contact">
-        <div class="col-6_sm-12 padded-2 center-sm">
-            <h2>The Design Collective</h2>
-            <h3>Web Design & Development</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis vitae optio esse nam perspiciatis culpa similique assumenda minus quis distinctio tenetur eius odio nesciunt, modi vel maiores! Fugiat, fugit officia!</p>
+    <div class="grid-spaceBetween flex-flip-sm padded padded-t-0 ">
+        <div class="col-6_sm-12 bg-image bg-project landscape-wide"></div>
+        <div class="col-5-middle_sm-12 padded right">
+            <h3>Zen Studio Website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime possimus quibusdam nemo modi dolorem, ea praesentium deleniti impedit iure, pariatur itaque asperiores eos labore reiciendis nisi ipsam, odit fuga sint.</p>
+            <a href="#" class="button">Go to site</a>
         </div>
-        <div class="col-4-bottom_sm-12 padded right center-sm">
-            <h3>Let's connect</h3>
-            <nav>
-                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </nav>
-        </div>
-        <div class="col-12 center padded-1">
-            <span class="xs-text">Copyright 2021</span>
-        </div>
-    </footer>
+    </div>
+</section>
 
-
-
-
-
-</body>
-</html>
