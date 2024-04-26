@@ -64,6 +64,20 @@ html { scroll-behavior: smooth; }
 .center { text-align: center; }
 .right  { text-align: right; }
 
+.capped-width {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.capped-width {
+    max-width: 900px;
+    margin: auto;
+}
+
+.flex-flip-alternate:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
 
 /* Universal Typography Classes */
 
@@ -103,7 +117,10 @@ nav a {
 
 a:hover { color: #d3b4a2; }
 
-
+.emphasis {
+    font-size: 1rem;
+    font-weight: 400;
+}
 
 /* Custom Typography Styles */
 
@@ -116,6 +133,7 @@ a:hover { color: #d3b4a2; }
 }
 
 .bg-rust .button:hover { color: #a2745c; }
+
 
 /* Header & Footer */
 
@@ -151,6 +169,33 @@ header nav a {
     opacity: 0.8;
     margin: 1rem 0;
 }
+
+.profile-image {
+    border-radius: 100%;
+}
+
+
+/* Responsive Videos */
+
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+
 
 
 /* Responsive Styles */
