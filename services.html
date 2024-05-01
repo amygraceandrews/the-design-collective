@@ -1,7 +1,65 @@
 ---
 layout: default
+features:
+    - title: Noa Olivia Website
+      description: Short description of website
+      featured_image: /images/placeholder-project.png
+    - title: Noa Olivia Website
+      description: Short description of website
+      featured_image: /images/placeholder-project.png
 ---
 
-<section>
-    SERVICES
+<!-- Header Banner Section -->
+<section class="bg-image bg-leaf padded tall-60 grid-middle-right">
+    <div class="col-6_sm-10 editable right">
+        <h2>
+            Our Services
+        </h2>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati at nobis omnis sed libero velit hic temporibus architecto delectus. Molestiae, corporis tempora quibusdam iste cumque dolore voluptatum eveniet voluptatibus doloremque?</p>
+    </div>
+</section>
+
+<!-- Services Grid Section -->
+<section  class="grid-spaceAround center bg-green padded">
+    <div class="col-4_sm-12 padded-1">
+        <h3>Design.</h3>
+        <p class="white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos incidunt ducimus odio inventore ipsa veniam! In sint eligendi, vero at nostrum deserunt voluptatibus provident! Molestiae suscipit perferendis quo! Nisi, eaque!</p>
+    </div>
+    <div class="col-4_sm-12 padded-1">
+        <h3>Build.</h3>
+        <p class="white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum modi perferendis, amet, aliquid ad consequatur velit voluptates adipisci aut molestias illum cum totam atque voluptatum itaque. Adipisci beatae aspernatur reiciendis?</p>
+    </div>
+    <div class="col-4_sm-12 padded-1">
+        <h3>SEO.</h3>
+        <p class="white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi illum sit dolorum, iusto adipisci temporibus accusamus autem officiis quod corporis optio atque culpa soluta explicabo! Fugiat repellat maiores natus magnam?</p>
+    </div>
+    <div class="col-12 padded-t-1">
+        <a href="/contact" class="button">Get in touch</a>
+    </div>
+</section>
+
+
+<!-- Sign-up Small Banner -->
+{% include newsletter-signup.html %}
+
+
+<!-- Projects Section (Jekyll) -->
+<section class="padded bg-rust" id="projects">
+    <h2 class="center">Recent Projects</h2>
+
+    <div class="capped-width">
+    {% for item in page.features limit: 4 %}
+
+    <div class="grid padded flex-flip-alternate">
+        <div class="col-5-middle_sm-12 padded">
+            <h3>{{item.title}}</h3>
+            <p>{{item.description}}</p>
+        </div>
+        <div class="col-7-middle_sm-12 bg-image">
+            <img src="{{item.featured_image}}" alt="{{item.title}}">
+        </div>  
+    </div>
+
+    {% endfor %}
+    </div>
 </section>

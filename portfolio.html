@@ -2,6 +2,59 @@
 layout: default
 ---
 
-<section>
-    PORTFOLIO
+
+<!-- Portfolio gallery  -->
+<section class="padded bg-green grid">
+    <div class="col-9 white-text padded-b">
+        <h2>We design & create but if you have a design of your own, let us know</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam facilis nulla culpa, id corporis, ipsam doloribus exercitationem dolor minima facere iusto dicta obcaecati! Dolorum laborum mollitia vitae neque quaerat at!</p>    
+    </div>
+
+    {% for project in site.projects limit:5 offset:1 %}
+
+        <div class="col-7-middle margin-b-2">
+            <div class="bg-image landscape" style="background-image: url('{{project.featured_image}}')"></div>
+        </div>
+
+        <div class="col-5-middle padded-2">
+            <h3>{{project.title}}</h3>
+            <p>{{project.description}}</p>
+            <p>Design by: {{project.design-by}}</p>
+            <p>Build by: {{project.build-by}}</p>
+            <a href="{{project.live_url}}" class="button" target="_blank">View Live Site</a>
+        </div>
+
+    {% endfor %}
+</section>
+
+<!-- Sign-up Small Banner -->
+{% include newsletter-signup.html %}
+
+<!-- Featured project -->
+<section class="padded center">
+    <h2>Featured Project</h2>
+
+    <div class="capped-width">
+    {% for project in site.projects limit:1 %}
+
+    
+        <div class="bg-image landscape" style="background-image: url('{{project.featured_image}}')">
+        </div>
+
+        <div class="grid-spaceBetween">
+            <div class="col-5 padded-2">
+                <h3>{{project.title}}</h3>
+                <p>{{project.description}}</p>
+            </div>
+            <div class="col-4 padded-2">
+                <p>Design by: {{project.design-by}}</p>
+                <p>Build by: {{project.build-by}}</p>
+                <a href="{{project.live_url}}" class="button-dark" target="_blank">View Live Site</a>    
+            </div>
+        </div>
+    
+
+    {% endfor %}
+    </div>
+
 </section>

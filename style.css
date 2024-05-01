@@ -35,6 +35,7 @@ html { scroll-behavior: smooth; }
 .padded-2  { padding: 2rem; }
 
 .padded-t-2  { padding-top: 2rem; }
+.padded-t-1 { padding-top: 1rem; }
 .padded-b-2  { padding-bottom: 2rem; }
 .padded-l-2 { padding-left: 2rem; }
 .padded-r-2 { padding-right: 2rem; }
@@ -44,6 +45,8 @@ html { scroll-behavior: smooth; }
 .padded-0 { padding: 0; }
 
 .margin-b-0 { margin-bottom: 0; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-b-2 { margin-bottom: 2rem; }
 
 .bg-white { background-color: white; }
 .bg-rust  { background-color: #d3b4a2; }
@@ -69,10 +72,6 @@ html { scroll-behavior: smooth; }
     margin: auto;
 }
 
-.capped-width {
-    max-width: 900px;
-    margin: auto;
-}
 
 .flex-flip-alternate:nth-child(even) {
     flex-direction: row-reverse;
@@ -132,6 +131,14 @@ a:hover { color: #d3b4a2; }
     color: white;
 }
 
+.button-dark {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid;
+    padding: 0.2rem 1rem;
+    color: #a2745c;
+}
+
 .bg-rust .button:hover { color: #a2745c; }
 
 
@@ -174,6 +181,11 @@ header nav a {
     border-radius: 100%;
 }
 
+.right-arrow {
+    max-width: 2rem;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+}
 
 /* Responsive Videos */
 
